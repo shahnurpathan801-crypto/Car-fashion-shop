@@ -446,7 +446,13 @@ https://mxaaptqhwsepxidpgefn.supabase.co/rest/v1/
     messagingSenderId: "785079920203",
     appId: "1:785079920203:web:35830d2db1f78a98e28fce",
     measurementId: "G-ZCMR4N7Q6L"
-  };
+};
+// Supabase Configuration
+const SUPABASE_URL = "YOUR_SUPABASE_PROJECT_URL";
+const SUPABASE_ANON_KEY = "YOUR_SUPABASE_ANON_KEY";
+
+const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
 
         // ===================================================================
         // STARTER CATALOG ITEMS (WITH REALISTIC AUTOMOTIVE UNSPLASH PHOTOS)
